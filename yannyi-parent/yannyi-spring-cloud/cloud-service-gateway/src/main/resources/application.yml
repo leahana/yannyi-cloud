@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: cloud-service-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        enabled: false
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedHeaders: "*"
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+              - OPTION
+      routes:
+        - id: intercept-requests
+          uri: lb://cloud-service-token
+          predicates:
+            - Host=**.127.0.0.1
+          filters:
+            - RewritePath=/, /token/**
+yannyi-cloud:
+  yannyi-feign.api:
+    token-client.name: cloud-service-token
