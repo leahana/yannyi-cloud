@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>yannyi-feign-api</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>token-service-api</module>
+        <module>keycloak-client-api</module>
+    </modules>
 
     <dependencies>
         <dependency>

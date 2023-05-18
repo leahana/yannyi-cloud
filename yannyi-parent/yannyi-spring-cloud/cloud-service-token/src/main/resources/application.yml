@@ -9,3 +9,10 @@ spring:
         server-addr: 127.0.0.1:8848
       config:
         enabled: false
+yannyi-cloud:
+  yannyi-feign:
+    api:
+      keycloak-client:
+        url: http://localhost:8079/
+        name: keycloak-client
+

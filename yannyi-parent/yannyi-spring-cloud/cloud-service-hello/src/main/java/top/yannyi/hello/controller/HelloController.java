@@ -3,7 +3,6 @@ package top.yannyi.hello.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.yannyi.feign.api.HelloClient;
 
 /**
  * @Author: LeahAna
@@ -13,9 +12,8 @@ import top.yannyi.feign.api.HelloClient;
 
 @RestController
 @RequestMapping("/hello")
-public class HelloController implements HelloClient {
+public class HelloController {
     @GetMapping
-    @Override
     public String hello() {
         return "hello helloClient";
     }
