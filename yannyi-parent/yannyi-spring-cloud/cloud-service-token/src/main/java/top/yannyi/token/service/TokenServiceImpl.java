@@ -15,9 +15,6 @@ import javax.annotation.Resource;
 @Service
 public class TokenServiceImpl implements TokenService {
 
-    @Resource
-    private KeycloakClient keycloakClient;
-
     @Override
     public String getToken() {
         return "this is token";

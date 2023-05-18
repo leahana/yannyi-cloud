@@ -3,25 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>yannyi-parent</artifactId>
+        <artifactId>yannyi-auto-template</artifactId>
         <groupId>top.yannyi</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yannyi-auto-template</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>yannyi-auto-aop</module>
-        <module>yannyi-auto-efile</module>
-        <module>yannyi-auto-sftp</module>
-    </modules>
+    <artifactId>yannyi-auto-efile</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
+
 
     </dependencies>
 

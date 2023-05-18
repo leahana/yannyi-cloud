@@ -15,6 +15,7 @@
         <module>cloud-service-token</module>
         <module>cloud-service-hello</module>
         <module>cloud-service-gateway</module>
+        <module>cloud-service-keycloak</module>
     </modules>
     <dependencies>
         <dependency>
