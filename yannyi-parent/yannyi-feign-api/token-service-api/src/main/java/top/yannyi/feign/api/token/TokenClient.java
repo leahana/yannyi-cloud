@@ -2,6 +2,8 @@ package top.yannyi.feign.api.token;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: LeahAna
@@ -12,6 +14,4 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface TokenClient {
     @GetMapping
     String getToken();
-
-
 }

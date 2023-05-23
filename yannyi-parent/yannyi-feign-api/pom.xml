@@ -14,6 +14,7 @@
     <modules>
         <module>token-service-api</module>
         <module>keycloak-client-api</module>
+        <module>poet-service-api</module>
     </modules>
 
     <dependencies>

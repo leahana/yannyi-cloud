@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: cloud-service-poet
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        enabled: false
+yannyi-cloud:
+  yannyi-feign:
+    api:
+      poet-service:
+        name: ${spring.application.name}
+

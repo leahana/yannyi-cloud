@@ -2,7 +2,6 @@ package top.yannyi.token.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
-import top.yannyi.feign.api.keycloak.KeycloakClient;
 
 import javax.annotation.Resource;
 
